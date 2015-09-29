@@ -4,8 +4,8 @@
  *
  *  posts page
  *
- * @package Site for HUG
- * @since Site for HUG  1.0
+ * @package thema WebSite3D
+ * @since thema WebSite3D    1.0
  */
 ?>
 <?php get_header();?>

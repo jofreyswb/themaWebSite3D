@@ -1,3 +1,13 @@
+ <?php
+/**
+ * File archive.php
+ *
+ *
+ *
+ * @package thema WebSite3D
+ * @since thema WebSite3D    1.0
+ */
+?>
 <!-- page  -->
 <?php get_header(); ?>
 <nav class="main-navigation">

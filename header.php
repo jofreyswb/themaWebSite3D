@@ -4,10 +4,11 @@
  *
  * header of the site
  *
- * @package Site for HUG
- * @since Site for HUG  1.0
+ * @package thema WebSite3D
+ * @since thema WebSite3D    1.0
  */
 ?>
+<?php global $mytheme; ?>
 <!DOCTYPE HTML>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>

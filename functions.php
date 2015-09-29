@@ -4,8 +4,8 @@
  *
  *
  *
- * @package Site for HUG
- * @since Site for HUG  1.0
+ * @package thema WebSite3D
+ * @since thema WebSite3D    1.0
  */
 ?>
 <?php
@@ -29,4 +29,6 @@ if (function_exists('add_theme_support')) {
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
+
+include('functions/settings.php');
 ?>

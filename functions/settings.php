@@ -1,9 +1,16 @@
+<?/* File sattings.php
+ *
+ *
+ *
+ * @package thema WebSite3D
+ * @since thema WebSite3D    1.0
+ */   ?>
 <?php
 class ControlPanel {
 // Устанавливаем значения по умолчанию
 var $default_settings = array(
- 'phone' => '495 122-12-12',
- 'email' => 'info@site.ru'
+ 'phone' => '',
+ 'email' => 'website3d@gmail.com'
  );
  var $options;
 
