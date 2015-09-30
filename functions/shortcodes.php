@@ -17,6 +17,7 @@ return'
 add_shortcode('paralax', 'min_paralax');
 
 
+
 /*кнопки текстового редактора*/
 function enable_more_buttons($buttons) {
  $buttons[] = 'hr';
@@ -53,6 +54,27 @@ function add_button() {
    }
 }
 add_action('init', 'add_button');
+
+/*add to TEXT
+=========================*/
+ if( !function_exists('_add_my_quicktags') ){
+function _add_my_quicktags()
+{ ?>
+<script type="text/javascript">
+
+QTags.addButton( 'Paralax', 'Paralax', '[paralax img=""]', '[/paralax]' );
+
+
+</script>
+<?php }
+add_action('admin_print_footer_scripts', '_add_my_quicktags');
+}
+/*add to TEXT
+=========================*/
+
 /*my button for Paralax
 =========================*/
+
+
+
 ?>
