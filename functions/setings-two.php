@@ -139,6 +139,8 @@ function mytheme_add_admin(){
     }
 
     function mytheme_add_init() {
+     $file_dir = get_bloginfo('template_directory');
+     wp_enqueue_style("functions", $file_dir."/functions/functions.css", false, "1.0", "all");
 
 }
 /*END add page option to admin panel
