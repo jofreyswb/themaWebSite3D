@@ -32,4 +32,5 @@ remove_filter( 'the_excerpt', 'wpautop' );
 
 /*include('functions/settings.php');  */
 include('functions/setings-two.php');
+include('functions/shortcodes.php');
 ?>
