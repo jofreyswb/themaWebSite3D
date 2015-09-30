@@ -4,7 +4,7 @@
 
     /* Categories */
     $categories = get_categories('hide_empty=0&order_by=name');
-        $wp_cats = array();
+    $wp_cats = array();
 
     foreach ($categories as $category_list){
         $wp_cats[$category_list -> cat_ID] = $category_list -> cat_name;
@@ -141,7 +141,7 @@ function mytheme_add_admin(){
     function mytheme_add_init() {
      $file_dir = get_bloginfo('template_directory');
      wp_enqueue_style("functions", $file_dir."/functions/functions.css", false, "1.0", "all");
-
+     wp_enqueue_script("rm_script", $file_dir."/functions/folder/rm_script.js", false, "1.0");
 }
 /*END add page option to admin panel
 =================================*/
@@ -320,4 +320,3 @@ case "select" :
 
 add_action('admin_init', 'mytheme_add_init');
 add_action('admin_menu', 'mytheme_add_admin');
-?>

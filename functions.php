@@ -30,5 +30,6 @@ remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
 
-include('functions/settings.php');
+/*include('functions/settings.php');  */
+include('functions/setings-two.php');
 ?>

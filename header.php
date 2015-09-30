@@ -45,12 +45,23 @@
 
 
     <!--Scripts CSS -->
-    <link rel="shortcut icon" href="<?php bloginfo( 'stylesheet_directory' ); ?>/img/favocon_plus700-1.png">
+    <link rel="shortcut icon" href="<?php echo get_option('ws_favicon');  ?>">
 
 <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 <!--<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/reset.css" type="text/css" />  -->
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/style.css" type="text/css" />
+<!-- them colorschema -->
+<!-- Изменяем CSS-файл, в зависимости от выбранного цвета  -->
+<link rel="stylesheet" type="text/css"  href="<?php bloginfo('template_directory'); ?>/<?php echo get_option('ws_color_scheme'); ?>.css" />
+
+<!--/*Выводим текст в подвале, можно использовать HTML-тэги */-->
+<p><?php echo stripslashes(get_option('ws_footer_text')); ?></p>
+<!-- them colorschema -->
+
+
+
+
 <!--<link rel="stylesheet" media="screen" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/responsive-leyouts.css" type="text/css" />  -->
 <!--<link href="<?php bloginfo( 'stylesheet_directory' ); ?>/js/mainmenu/sticky.css" rel="stylesheet">  -->
 <!-- Menu -->
@@ -74,7 +85,7 @@
         <?php if ( get_header_image() ) : ?>
     	<div id="site-header">
     		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-    			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+    			<img src="<?php echo get_option('ws_logo'); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
     		</a>
     	</div>
     	<?php endif; ?>
