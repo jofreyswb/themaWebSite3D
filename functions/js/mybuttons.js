@@ -5,7 +5,7 @@
         init : function(ed, url) {
             ed.addButton('paralax', {
                 title : 'Paralax',
-                image : url+'/functions/images/paralax.png',
+                image : url+'/images/paralax.png',
                 onclick : function() {
                      ed.selection.setContent('[paralax img=""]' + ed.selection.getContent() + '[/paralax]');
 
