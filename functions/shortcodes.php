@@ -1,6 +1,6 @@
-<script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/functions/js/parallax.js"></script>  
+<!--<script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/functions/js/parallax.js"></script> -->
 <?php
-$thisTemplate = get_bloginfo('template_url');
+
  function min_paralax($attr,$content= null){
     extract(shortcode_atts(array(
      "img1" => '',
@@ -36,11 +36,7 @@ return
  '.$content.'  </div></section></section></section></div>';
 }
 add_shortcode('paralax', 'min_paralax');
-/*<div class="min_paralax ">''.content.''<div class="pbg1  " style="font-size: 40px; color: #CC0000" >pbg1 <div class="pbg2" style="font-size: 40px; color: #5ECC10">pbg2 <div class="pbg3"style="font-size: 40px; color: #6133CC">pbg3  </div></div></div></div>';*/
-                                    /*<div class="pbg1  "  >pbg1 </div><div class="pbg2" >pbg2 </div><div class="pbg3">pbg3</div>*/
 
-   /* // z-index: 4;
-//position: relative;*/
 /*кнопки текстового редактора*/
 function enable_more_buttons($buttons) {
  $buttons[] = 'hr';
@@ -89,6 +85,8 @@ QTags.addButton( 'Paralax', 'Paralax', '[paralax img1="" img2="" img3=""]', '[/p
 
 
 </script>
+ <script  src="<?php get_bloginfo('template_url'); ?>/functions/js/parallax.js"></script>
+ <!--<script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/functions/js/parallax.js"></script>-->
 <?php }
 add_action('admin_print_footer_scripts', '_add_my_quicktags');
 }
