@@ -1,18 +1,27 @@
 <?php
+$thisTemplate = get_bloginfo('template_url');
  function min_paralax($attr,$content= null){
     extract(shortcode_atts(array(
-     "img" => ''
+     "img1" => '',
+     "img2" => '' ,
+     "img3" => ''
      ), $attr));
 return'
 <style type="text/css">
 .min_paralax{
-  background: #E2D9DF  url('.$img.') fixed center center no-repeat ;
-  height: 100%;
+ height: 100%;
   width: 100%;
-
-}
+  z-index: 4;
+position: fixed;
+top:0;
+ }
+.pbg1{background:  url('.$img1.');position: absolute;   }
+.pbg2{background:  url('.$img2.'); position: absolute;  }
+.pbg3{background:  url('.$img3.');position: absolute;  }
 </style>
-<div class="min_paralax">'.$content.'</div>';
+<script type="text/javascript" src= ".'$thisTemplate'./functions/js/mybuttons.js">
+</script>
+<div class="min_paralax pbg1  pbg2 pbg3">'.$content.'</div>';
 }
 add_shortcode('paralax', 'min_paralax');
 
@@ -62,7 +71,7 @@ function _add_my_quicktags()
 { ?>
 <script type="text/javascript">
 
-QTags.addButton( 'Paralax', 'Paralax', '[paralax img=""]', '[/paralax]' );
+QTags.addButton( 'Paralax', 'Paralax', '[paralax img1="" img2="" img3=""]', '[/paralax]' );
 
 
 </script>
