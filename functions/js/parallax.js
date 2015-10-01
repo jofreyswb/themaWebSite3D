@@ -1,10 +1,12 @@
-$(window).bind('scroll',function(e){
+$('#min_paralax').bind('scroll',function(e){
     parallaxScroll();
 });
 
 function parallaxScroll(){
-    var scrolled = $(window).scrollTop();
-    $('.pbg1').css('top',(0-(scrolled*.25))+'px');
-    $('.pbg2').css('top',(0-(scrolled*.5))+'px');
-    $('.pbg3').css('top',(0-(scrolled*.75))+'px');
+    var scrolled = $('#min_paralax').scrollTop();
+    $('.pbg1').css('background',(0-(scrolled*.10))+'px');
+    $('.pbg2').css('background',(0-(scrolled*.20))+'px');
+    $('.pbg3').css('background',(0-(scrolled*.30))+'px');
 }
+
+/*window  top */

@@ -3,7 +3,7 @@ $thisTemplate = get_bloginfo('template_url');
  function min_paralax($attr,$content= null){
     extract(shortcode_atts(array(
      "img1" => '',
-     "img2" => '' ,
+     "img2" => '',
      "img3" => ''
      ), $attr));
 return'
@@ -11,22 +11,26 @@ return'
 .min_paralax{
  height: 100%;
   width: 100%;
-  z-index: 4;
-position: fixed;
-top:0;
+
+ background:  url('.$img1.') no-repeat fixed center center   ;
+
  }
-.pbg1{background:  url('.$img1.');position: absolute;   }
-.pbg2{background:  url('.$img2.'); position: absolute;  }
-.pbg3{background:  url('.$img3.');position: absolute;  }
+
+.pbg1{background:  url('.$img1.');position: relative;   height: 100%;  width: 100%; }
+.pbg2{background:  url('.$img2.') repeat-y  center center scroll; height: 100%;  width: 100%; }
+.pbg3{background:  url('.$img3.');position: absolute;  height: 100%;  width: 100%; }
 </style>
-<script type="text/javascript" src= ".'$thisTemplate'./functions/js/mybuttons.js">
-</script>
-<div class="min_paralax pbg1  pbg2 pbg3">'.$content.'</div>';
+
+<div class="min_paralax" id="min_paralax">
+<div class="pbg2 ">
+ '.$content.'  </div></div>';
 }
 add_shortcode('paralax', 'min_paralax');
+/*<div class="min_paralax ">''.content.''<div class="pbg1  " style="font-size: 40px; color: #CC0000" >pbg1 <div class="pbg2" style="font-size: 40px; color: #5ECC10">pbg2 <div class="pbg3"style="font-size: 40px; color: #6133CC">pbg3  </div></div></div></div>';*/
+                                    /*<div class="pbg1  "  >pbg1 </div><div class="pbg2" >pbg2 </div><div class="pbg3">pbg3</div>*/
 
-
-
+   /* // z-index: 4;
+//position: relative;*/
 /*кнопки текстового редактора*/
 function enable_more_buttons($buttons) {
  $buttons[] = 'hr';
