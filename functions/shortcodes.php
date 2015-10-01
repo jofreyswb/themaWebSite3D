@@ -1,3 +1,4 @@
+<script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/functions/js/parallax.js"></script>  
 <?php
 $thisTemplate = get_bloginfo('template_url');
  function min_paralax($attr,$content= null){

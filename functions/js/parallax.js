@@ -1,12 +1,15 @@
-$('#min_paralax').bind('scroll',function(e){
-    parallaxScroll();
+$(document).ready(function(){
+
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // создаем объект
+        $(window).scroll(function() {
+            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент
+            // Присваиваем значение background-position
+            var coords = 'center '+ yPos + 'px';
+            // Создаем эффект Parallax Scrolling
+            $bgobj.css({ backgroundPosition: coords });
+        });
+    });
+
 });
 
-function parallaxScroll(){
-    var scrolled = $('#min_paralax').scrollTop();
-    $('.pbg1').css('background',(0-(scrolled*.10))+'px');
-    $('.pbg2').css('background',(0-(scrolled*.20))+'px');
-    $('.pbg3').css('background',(0-(scrolled*.30))+'px');
-}
-
-/*window  top */
