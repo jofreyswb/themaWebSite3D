@@ -74,6 +74,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <?/*<link href="<?php bloginfo( 'stylesheet_directory' ); ?>/style.css" rel="stylesheet" type="text/css">*/?>
 <script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/menu.js"></script>
+<script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/parallax.js"></script>
 
 
     <!--Scripts CSS -->

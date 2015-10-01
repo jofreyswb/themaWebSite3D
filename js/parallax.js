@@ -1,11 +1,5 @@
 $(document).ready(function(){
 
-
-   $("#current").click(function(){
-     /*  $(".main-nav ul").fadeOut(2000);  */
-     $(".main-nav ul").toggleClass("vivsibleNone");
-    }); 
-	
     $('section[data-type="background"]').each(function(){
         var $bgobj = $(this); // создаем объект
         $(window).scroll(function() {

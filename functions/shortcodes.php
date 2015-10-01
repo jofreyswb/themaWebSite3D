@@ -6,24 +6,33 @@ $thisTemplate = get_bloginfo('template_url');
      "img2" => '',
      "img3" => ''
      ), $attr));
-return'
+return
+'
 <style type="text/css">
 .min_paralax{
  height: 100%;
-  width: 100%;
+ width: 100%;
 
- background:  url('.$img1.') no-repeat fixed center center   ;
+ 
+
+ //background:  url('.$img1.') no-repeat fixed center center   ;
 
  }
+ .contentbox{
+	 padding: 50px 0 50px 0;
+ }
 
-.pbg1{background:  url('.$img1.');position: relative;   height: 100%;  width: 100%; }
-.pbg2{background:  url('.$img2.') repeat-y  center center scroll; height: 100%;  width: 100%; }
-.pbg3{background:  url('.$img3.');position: absolute;  height: 100%;  width: 100%; }
+.pbg1{background:  url('.$img1.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
+.pbg2{background:  url('.$img2.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
+.pbg3{background:  url('.$img3.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
 </style>
 
 <div class="min_paralax" id="min_paralax">
-<div class="pbg2 ">
- '.$content.'  </div></div>';
+<section class="pbg1" data-type="background" data-speed="1.5">
+<section class="pbg2" data-type="background" data-speed="0.5">
+<section class="pbg3" data-type="background" data-speed="0.1">
+<div class="contentbox">
+ '.$content.'  </div></section></section></section></div>';
 }
 add_shortcode('paralax', 'min_paralax');
 /*<div class="min_paralax ">''.content.''<div class="pbg1  " style="font-size: 40px; color: #CC0000" >pbg1 <div class="pbg2" style="font-size: 40px; color: #5ECC10">pbg2 <div class="pbg3"style="font-size: 40px; color: #6133CC">pbg3  </div></div></div></div>';*/

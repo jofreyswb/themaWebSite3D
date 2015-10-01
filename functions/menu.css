@@ -1,59 +1,46 @@
 /* Menu */
 .main-nav {
-margin: 20px 0;
-min-height: 50px;
 position: relative;
+margin: 20px 0;
 }
 .main-nav ul {
 margin: 0;
 padding: 0;
 }
 .main-nav li {
-   margin: 5px 15px 10px;
+margin: 0 5px 10px 0;
 padding: 0;
 list-style: none;
 display: inline-block;
-
 }
-
-
 /*sub menu*/
 .main-nav li ul{
-//margin: 0 5px 10px 0;
-margin: 0;
+margin: 0 5px 10px 0;
 padding: 0;
 list-style: none;
 display: none;
 }
 
 .main-nav li:hover ul{
-// margin-top: 11px ;
-//padding-top: 5px;
+margin: 0 5px 0px 0;
+padding-top: 5px;
 list-style: none;
 display: block;
 position: absolute;
-background: #DEDCE0;
-width: 150px;
 }
 .main-nav ul li:hover ul li{
   display: block;
- width: 100%;
- margin: 0;
 }
 
 /*sub menu*/
 .main-nav a {
-
+padding: 3px 12px;
 text-decoration: none;
 color: #999;
 line-height: 100%;
-padding-bottom: 10px;  display: block; width: 100%;
 }
 .main-nav a:hover {
 color: #000;
-border-bottom: #72795D 1px solid;
-transition: linear 1000ms;
-
 }
 .main-nav .current a {
 background: #999;
@@ -84,61 +71,50 @@ position: relative;
 min-height: 40px;
 }
 .main-nav ul {
-background: rgb(41, 41, 41) none no-repeat scroll 10px 11px;
+width: 180px;
+/*padding: 35px 0;
+position: absolute;
+top: 0;
+left: 0;*/
 display: none;
-width: 100% !important;
+//height:35px;
+border: solid 1px #aaa;
+background: #fff  no-repeat 10px 11px;
+border-radius: 5px;
+box-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 .main-nav ul li {
 display: block; /* hide all <li> items */
-padding:0!important;
-margin:0 !important;
+margin: 0;
 }
-.main-nav ul li{
-    border-top: 1px dotted #fff;
-}
-
 
 .current {
 display: block !important;
 text-align: center;
-width: 100%;
-background: #45484a;
+width: 180px;
+background: #ff0000;
 font-weight: 900;
-cursor: pointer;color: #FFFFFF;
+cursor: pointer;
 }
 .main-nav a {
 display: block;
-font-size: 16px;
 margin: 0;
-padding: 10px 0px 10px 32px !important;
+padding: 5px 5px 5px 32px;
 text-align: left;
 }
-.main-nav a:hover{
-// padding: 5px 5px 5px 42px;
-color: #fff;
-border: none;
-width: 100%;
-}
-
 .main-nav .current a {
 background: none;
 color: #666;
 }
-.main-nav li ul a{
-/*  display: block;
- // margin-left: 10px;
- border: none;
- width: 100%;*/
-padding-left: 50px;
+.main-nav li ul{
+  display: block;
+  margin-left: 10px;
 }
-
 .main-nav li:hover ul{
   position: relative;
   display: block;
-  margin: 0  ;
-  background: none !important;
+  margin: 0  0  0 10px;
 }
-
 
 /* При наведении указателя мыши на меню
 .main-nav ul:hover {
@@ -183,9 +159,9 @@ left: auto;
 right: 0;
 }
 /* Меню в центре //*/
-/*.main-nav{
+.main-nav{
 left: 50%;
-margin-left: -125px;*/
+margin-left: -90px;
 }
 }
 
