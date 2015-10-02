@@ -95,7 +95,17 @@ add_action('admin_print_footer_scripts', '_add_my_quicktags');
 
 /*my button for Paralax
 =========================*/
-
+function wptuts_scripts_basic()
+{
+    // Register the script like this for a plugin:
+   // wp_register_script( 'custom-script', plugins_url( '/js/custom-script.js', __FILE__ ) );
+    // or
+    // Register the script like this for a theme:
+    wp_register_script( 'parallax', get_template_directory_uri() . '/functions/js/parallax.js' );
+    // For either a plugin or a theme, you can then enqueue the script:
+    wp_enqueue_script( 'parallax' );
+}
+add_action( 'wp_enqueue_scripts', 'wptuts_scripts_basic' );
 
 
 ?>
