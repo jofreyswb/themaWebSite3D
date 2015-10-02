@@ -92,7 +92,7 @@ text-align: center;
         box-shadow: 5px 5px 20px #333;
     }
     .transbg {
-        background-color: rgba(153, 153, 153, 0.91)!important;
+        background-color: rgba(57, 13, 13, 0.91)!important;
     }
 /* LIP */
 
@@ -100,6 +100,9 @@ text-align: center;
 .vivsibleNone{
   display: block  !important ;
 }
+ .nav-menu{
+   display: none ;
+ }
 
 .main-nav {
 position: relative;
