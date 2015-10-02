@@ -81,10 +81,10 @@ text-align: center;
 /* LIP */
  .fixed {
         position:fixed;
-        top:5px; left:0;
+        top:0px; left:0;
         width:100%;
         padding:10px 0;
-
+        z-index: 100;
         height:  auto;
 
         -moz-box-shadow: 5px 5px 20px #333;
