@@ -81,7 +81,7 @@ text-align: center;
 /* LIP */
  .fixed {
         position:fixed;
-        top:-5px; left:0;
+        top:5px; left:0;
         width:100%;
         padding:10px 0;
 
@@ -92,7 +92,7 @@ text-align: center;
         box-shadow: 5px 5px 20px #333;
     }
     .transbg {
-        background-color: rgba(60, 130, 190, 0.7)!important;
+        background-color: rgba(153, 153, 153, 0.91)!important;
     }
 /* LIP */
 
