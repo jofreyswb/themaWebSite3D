@@ -16,6 +16,11 @@ display: inline-block;
 
 }
 
+.nav-menu{
+  width:900px;
+  margin: 0 auto;
+
+}
 
 /*sub menu*/
 .main-nav li ul{
@@ -73,6 +78,23 @@ text-align: center;
   display: block ;
 }
 
+/* LIP */
+ .fixed {
+        position:fixed;
+        top:-5px; left:0;
+        width:100%;
+        padding:10px 0;
+
+        height:  auto;
+
+        -moz-box-shadow: 5px 5px 20px #333;
+        -webkit-box-shadow: 5px 5px 20px #333;
+        box-shadow: 5px 5px 20px #333;
+    }
+    .transbg {
+        background-color: rgba(60, 130, 190, 0.7)!important;
+    }
+/* LIP */
 
 @media screen and (max-width: 800px) {
 .vivsibleNone{

@@ -6,16 +6,41 @@ $(document).ready(function(){
      $(".main-nav ul").toggleClass("vivsibleNone");
     }); 
 	
-    $('section[data-type="background"]').each(function(){
-        var $bgobj = $(this); // создаем объект
-        $(window).scroll(function() {
-            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент
-            // Присваиваем значение background-position
-            var coords = 'center '+ yPos + 'px';
-            // Создаем эффект Parallax Scrolling
-            $bgobj.css({ backgroundPosition: coords });
-        });
-    });
+/* Липучка для меню
+========================*/
+        var $menu = $("#primary-menu");
 
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() > 200 && $menu.hasClass("nav-menu") ){
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("nav-menu")
+                           .addClass("fixed transbg")
+                           .fadeIn('fast');
+                   /*$("#UpButton").removeClass("UpButtonn").addClass("UppBtn").fadeIn('fast');  */
+
+                });
+            } else if($(this).scrollTop() <= 200 && $menu.hasClass("fixed")) {
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("fixed transbg")
+                           .addClass("nav-menu")
+                           .fadeIn('fast');
+                   /* $("#UpButton").removeClass("UppBtn").addClass("UpButtonn").fadeIn('fast'); */
+                });
+            }
+        });//scroll
+
+        $menu.hover(
+            function(){
+                if( $(this).hasClass('fixed') ){
+                    $(this).removeClass('transbg');
+                }
+            },
+            function(){
+                if( $(this).hasClass('fixed') ){
+                    $(this).addClass('transbg');
+                }
+            });//hover
+/* Липучка для меню
+========================*/
 });
 
