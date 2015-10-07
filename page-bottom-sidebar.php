@@ -3,7 +3,7 @@
  * File page.php
  *
  *
- *
+ * Template Name: Нижний сайдбар
  * @package thema WebSite3D
  * @since thema WebSite3D    1.0
  */
@@ -20,4 +20,11 @@
         <?php the_content(); ?>
     <?php endwhile; endif; ?>
 </section>    <!-- end main-heading -->
+<div class="botomSidebar">
+    <?php if ( is_active_sidebar( 'bottom-sidebar' ) ) :
+
+   dynamic_sidebar( 'bottom-sidebar' );
+
+ endif; ?>
+</div>
 <?php get_footer(); ?>

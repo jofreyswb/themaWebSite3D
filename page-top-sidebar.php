@@ -3,14 +3,18 @@
  * File page.php
  *
  *
- *
+ *Template Name:Верхний сайдбар
  * @package thema WebSite3D
  * @since thema WebSite3D    1.0
  */
 ?>
 
 <?php get_header(); ?>
-
+      <div class="topSidebar">
+                    <?php if ( is_active_sidebar( 'top-sidebar' ) ) :
+                     dynamic_sidebar( 'top-sidebar' );
+                   endif; ?>
+      </div>
 <div class="main-heading">
     <h1 class="site-title"><?php the_title(); ?></h1>
 </div>
