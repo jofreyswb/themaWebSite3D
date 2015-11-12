@@ -7,7 +7,7 @@
                 title : 'Paralax',
                 image : url+'/images/paralax.png',
                 onclick : function() {
-                     ed.selection.setContent('[paralax img1="" img2="" img3=""]' + ed.selection.getContent() + '[/paralax]');
+                     ed.selection.setContent('[paralax img1="" img2="" img3="" speed1="" speed="2" speed="3"]' + ed.selection.getContent() + '[/paralax]');
 
                 }
             });

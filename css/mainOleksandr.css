@@ -1,0 +1,219 @@
+.nomer_wrapper{
+	width: 30%;
+	min-width: 400px;
+	height: 500px;
+	margin-left: 1.25%;
+	margin-right: 1.25%;
+	margin-top: 10px;
+	float:left;
+}
+/*.nomer{
+	width: 368px;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.3);
+}*/
+.nomer {
+ // border: 1px solid black;
+  float: left;
+  margin: 0 7px 28px 22px;
+  width: 368px;
+}
+.nom_bg{
+	height: 250px;
+	margin: 9px;
+	width: 350px;
+	border: 1px solid black;
+	border-radius: 125px;
+	background-color: rgba(255,255,255,0.3);
+}
+.nom_price{
+	text-align: center;
+	font-family: castellar;
+}
+.nom_name{
+    color: gold;
+    font-family: Georgia;
+    font-size: 36px;
+    text-align: center;
+    height: 40px;
+    margin-top: 16px;
+}
+.nom_opt{
+	background: url(http://iconspot.ru/files/186411.png);
+	/*background-position: auto;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+}
+.nom_opt > p{
+	margin-left: 30px;
+	margin-top: 5px;
+	font-family: georgia;
+	font-size: 16px;
+	color: #535353;
+}
+.opts {
+	margin: 2px;
+	background-color: pink;
+	border: 2px solid white;
+}
+.hotelNomer {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 250px;
+}
+
+
+/*
+<div class="nomer_wrapper">
+<div class="nomer">
+<div class="nom_bg"></div>
+<div class="nom_price">--- 2472 грн ---</div>
+<div class="nom_name">Одномісний стандарт</div>
+<div class="opts">
+<div class="nom_opt">
+
+Диван
+
+</div>
+<div class="nom_opt">
+
+Полка
+
+</div>
+<div class="nom_opt">
+
+Шкаф
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="nomer_wrapper">
+<div class="nomer">
+<div class="nom_bg"></div>
+<div class="nom_price">--- 2472 грн ---</div>
+<div class="nom_name">Одномісний стандарт</div>
+<div class="opts">
+<div class="nom_opt">
+
+Диван
+
+</div>
+<div class="nom_opt">
+
+Полка
+
+</div>
+<div class="nom_opt">
+
+Шкаф
+
+</div>
+</div>
+</div>
+</div>
+<div class="nomer_wrapper">
+<div class="nomer">
+<div class="nom_bg"></div>
+<div class="nom_price">--- 3472 грн ---</div>
+<div class="nom_name">Одномісний стандарт</div>
+<div class="opts">
+<div class="nom_opt">
+
+Диван
+
+</div>
+<div class="nom_opt">
+
+Полка
+
+</div>
+<div class="nom_opt">
+
+Шкаф
+
+</div>
+</div>
+</div>
+</div>
+*/
+
+
+
+
+/* Sergey */
+.nomer > img {
+  width: 100%;
+  height: auto;
+}
+
+.opisNomera {
+  text-align: center;
+  color:#ae8748;
+}
+
+.opisNomera h1 {
+    color: #a32431;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.opisNomera h1 b {
+    border: 1px solid #fff;
+    text-transform: none;
+    padding: 4px;
+    font-size: 25px;
+}
+
+.opisNomera h2,.opisNomera h4{
+      margin: 0;
+    padding: 0;
+}
+
+.inNomer {
+  background: rgba(163, 36, 49, 0.9) none repeat scroll 0 0;
+  border: 2px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  width: 330px;
+  margin: 0 auto;
+}
+.inNomer li {
+  list-style: inside none circle;
+  margin: 0 auto;
+  width: 200px;
+}
+.imgToFooter {
+  width: 100%;
+}
+.imgN {
+  height: auto;
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 250px;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 800px)   and (max-width: 1200px) {
+.hotelNomer {
+  max-width: 800px;
+}
+
+}
+
+@media screen and (max-width: 800px){
+  .nomer {
+  margin: 0 auto 28px ;
+float: none;
+}
+}
+
+/* Sergey */

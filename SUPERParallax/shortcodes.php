@@ -25,14 +25,17 @@ License: GPL2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 ?>
-<!--<script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/functions/js/parallax.js"></script> -->
 <?php
 
  function minparalax($attr,$content= null){
     extract(shortcode_atts(array(
      "img1" => '',
      "img2" => '',
-     "img3" => ''
+     "img3" => '',
+     "speed1" =>'2',
+     "speed2" =>'1',
+     "speed3" =>'0.5',
+
      ), $attr));
 return
 '
@@ -49,9 +52,9 @@ return
 .pbg3{background:  url('.$img3.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
 </style> 
 <div class="min_paralax" id="min_paralax">
-<section class="pbg1" data-type="background" data-speed="1.5">
-<section class="pbg2" data-type="background" data-speed="0.5">
-<section class="pbg3" data-type="background" data-speed="0.1">
+<section class="pbg1" data-type="background" data-speed=".'$speed1'.">
+<section class="pbg2" data-type="background" data-speed=".'$speed2'.">
+<section class="pbg3" data-type="background" data-speed=".'$speed3'.">
 <div class="contentbox">
  '.$content.'  </div></section></section></section></div>';
 }
@@ -87,7 +90,7 @@ add_action('init', 'addbutton');
 function _add_my_quicktags()
 { ?>
 <script type="text/javascript">
-QTags.addButton( 'Paralax', 'Paralax', '[paralax img1="" img2="" img3=""]', '[/paralax]' );
+QTags.addButton( 'Paralax', 'Paralax', '[paralax img1="" img2="" img3="" speed1="" speed="2" speed="3"]', '[/paralax]' );
 </script>
 <?php }
 add_action('admin_print_footer_scripts', '_add_my_quicktags');

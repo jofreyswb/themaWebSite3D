@@ -1,0 +1,244 @@
+﻿body{
+  background: #fefcec url(../img/textura/textura_fon_300_w.png);
+  margin: 0;
+  padding: 0;
+    height: 100%;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 20px;
+}
+html{
+    margin: -17px 0 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+ header {
+  min-height: 139px;
+   background:  url(../img/textura/gradient_header.png) repeat-x ;
+   position: relative;
+    z-index: 10;
+}
+/* ===================== */
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+	margin: 0.4em 1.6em 1.6em 0;
+}
+
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+	margin: 0.4em 0 1.6em 1.6em;
+}
+
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+	clear: both;
+	margin-top: 0.4em;
+	margin-bottom: 1.6em;
+}
+
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.aligncenter {
+	margin-bottom: 1.2em;
+}
+/* =================== */
+.inheader {
+
+margin: 0 auto;
+max-width: 1200px;
+min-width: 250px;
+position: relative;
+z-index: 10;
+}
+.preheader{
+background: #fefcec;
+font-size: 17px;
+height: 55px;
+}
+#site-header {
+  height: auto;
+  width: 284px;
+  float: left;
+}
+.phoneNumber li {
+  color: #a32431;
+  float: left;
+  list-style: outside none none;
+  margin: 0 18px 0 0;
+}
+.menuDontUp {
+    float: right;
+    text-transform: uppercase;
+}
+.big-menu li {
+  float: left;
+  list-style: outside none none;
+}
+.big-menu a {
+
+  color: #888888;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item-12,.menu-item-11{
+border-left: 1px solid #888888;
+border-right: 1px solid #888888;
+margin-left: -1px;
+}
+
+.inPreheader {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: 250px;
+}
+
+.prostoParalaxOne{
+background:  url("../img/aa.jpg") repeat fixed center center;
+min-height: 400px;
+}
+.paralaxForImageBlock{
+background:  url("../img/textura/textura_fon_bordo.png") repeat fixed center center;
+min-height: 400px;
+margin-top: -20px;
+}
+.specialForLayerSlaider {
+margin: -139px auto;
+min-height: 650px;
+}
+
+.wrapper {
+
+}
+section {
+  margin: 0 auto;
+  min-height: 400px;
+  min-width: 250px;
+}
+.leftSidebar {
+  float: left;
+  max-width: 350px;
+  min-width: 250px;
+  min-height: 200px;
+  padding-left: 10px;
+}
+.inSection {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 500px;
+  min-width: 250px;
+  padding: 30px;
+  padding-bottom: 60px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.7);
+
+
+}
+.sectionInleftsidebar,.inRigthSideBar {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 250px;
+}
+.inSectionLeftSidebar {
+margin-left: 350px;
+min-height: 500px;
+padding-bottom: 70px;
+text-align: justify;
+padding-right: 15px;
+}
+
+.forInOneParalax {
+  margin-top: -20px;
+  background: #a32431  url("../img/22.jpg") repeat fixed center center;
+}
+
+
+.hotelreteringrestoran > p {
+  display: none;
+}
+
+
+/* rightSidebar */
+.rightSidebar {
+float: right;
+max-width: 350px;
+min-height: 200px;
+min-width: 250px;
+padding-left: 10px;
+}
+
+.inSectionRightSidebar {
+  margin-right: 350px;
+  min-height: 500px;
+  padding-bottom: 70px;
+  padding-right: 15px;
+  text-align: justify;
+}
+/* rightSidebar */
+
+@media screen and (min-width: 800px) and (max-width: 1043px){
+
+.big-menu a {
+  padding: 0 17px;
+}
+
+.phoneNumber li {
+  margin: 0 3px -20px 0;
+}
+
+.phoneNumber li {
+  float: none;
+}
+
+}
+@media screen and (min-width: 800px) and (max-width: 1110px){
+.menuDontUp {
+  margin-top: -54px;
+}
+
+
+}
+@media screen and (max-width: 886px)  {
+
+
+}
+
+
+
+@media screen and (max-width: 751px)  {
+.sixImages {
+height: 911px ;
+}
+}
+@media screen and (max-width: 599px)  {
+.sixImages {
+height: 1900px ;
+}
+.imageToblock {
+  float: none !important;
+  margin: 15px auto !important;
+}
+}
+@media screen and (min-width: 886px) and (max-width: 1034px){
+
+}

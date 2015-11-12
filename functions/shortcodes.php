@@ -1,4 +1,3 @@
-<!--<script  src="<?php bloginfo( 'stylesheet_directory' ); ?>/functions/js/parallax.js"></script> -->
 <?php
 
  function min_paralax($attr,$content= null){

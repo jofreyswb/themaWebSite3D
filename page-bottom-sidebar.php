@@ -11,20 +11,22 @@
 
 <?php get_header(); ?>
 
-<div class="main-heading">
+<!--<div class="main-heading">
     <h1 class="site-title"><?php the_title(); ?></h1>
-</div>
+</div>-->
 
 <section>
+<div class="inSection">
     <?php if (have_posts()): while (have_posts()): the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; endif; ?>
-</section>    <!-- end main-heading -->
-<div class="botomSidebar">
-    <?php if ( is_active_sidebar( 'bottom-sidebar' ) ) :
-
-   dynamic_sidebar( 'bottom-sidebar' );
-
- endif; ?>
 </div>
+    <div class="botomSidebar">
+        <?php if ( is_active_sidebar( 'bottom-sidebar' ) ) :
+            dynamic_sidebar( 'bottom-sidebar' );
+         endif; ?>
+    </div>
+</section>    <!-- end main-heading -->
+
+
 <?php get_footer(); ?>
