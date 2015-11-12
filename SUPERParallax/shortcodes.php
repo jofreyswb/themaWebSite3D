@@ -34,7 +34,7 @@ License: GPL2
      "img3" => '',
      "speed1" =>'2',
      "speed2" =>'1',
-     "speed3" =>'0.5',
+     "speed3" =>'0.5'
 
      ), $attr));
 return
@@ -50,11 +50,11 @@ return
 .pbg1{background:  url('.$img1.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
 .pbg2{background:  url('.$img2.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
 .pbg3{background:  url('.$img3.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
-</style> 
+</style>
 <div class="min_paralax" id="min_paralax">
-<section class="pbg1" data-type="background" data-speed=".'$speed1'.">
-<section class="pbg2" data-type="background" data-speed=".'$speed2'.">
-<section class="pbg3" data-type="background" data-speed=".'$speed3'.">
+<section class="pbg1" data-type="background" data-speed='.$speed1.'>
+<section class="pbg2" data-type="background" data-speed='.$speed2.'>
+<section class="pbg3" data-type="background" data-speed='.$speed3.'>
 <div class="contentbox">
  '.$content.'  </div></section></section></section></div>';
 }
