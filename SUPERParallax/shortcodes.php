@@ -2,7 +2,7 @@
 Plugin Name: SuperParallax
 Plugin URI: http://website3d.ru
 Description: Adding an easy-configurable multi-layered parallax.
-Version: 1.0
+Version: 1.1.0
 Author: website3d
 Author URI: http://website3d.ru
 License: GPL2

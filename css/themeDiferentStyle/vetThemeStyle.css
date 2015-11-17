@@ -1,0 +1,1178 @@
+/* Theme CSS to site VET Corportion */
+
+
+/* *************************************
+ * --------------Menu------------------*
+ **************************************/
+
+ /* Menu */
+.main-nav {
+margin: 20px 0;
+min-height: 50px;
+position: relative;
+float: right;
+font-weight: 600;
+font-size: 14px;
+ margin-top: 20px;
+}
+.menu-general-container {
+  text-align: right;
+}
+.main-nav ul {
+margin: 0;
+padding: 0;
+}
+.main-nav li {
+   margin: 5px 15px 10px;
+padding: 0;
+list-style: none;
+display: inline-block;
+
+}
+
+.nav-menu{
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/*sub menu*/
+.main-nav li ul{
+//margin: 0 5px 10px 0;
+margin: 0;
+padding: 0;
+list-style: none;
+display: none;
+}
+
+.main-nav li:hover ul{
+// margin-top: 11px ;
+//padding-top: 5px;
+list-style: none;
+display: block;
+position: absolute;
+background: #DEDCE0;
+width: 150px;
+}
+.main-nav ul li:hover ul li{
+  display: block;
+ width: 100%;
+ margin: 0;
+}
+
+/*sub menu*/
+
+.main-nav a {
+  color: #f1efec;
+  display: block;
+  font-size: 12px;
+  line-height: 100%;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.current_page_item {
+color: #cbcac8;
+border-bottom: #fefcec 1px solid;
+}
+.current_page_item:hover{
+ border-bottom: none;
+}
+
+.main-nav a:hover {
+color: #cbcac8;
+border-bottom: #f1efec 1px solid;
+//transition: linear 1000ms;
+
+}
+.main-nav .current a {
+background: #999;
+color: #fff;
+border-radius: 5px;
+}
+ .current{
+display: none;
+font-size: 30px;
+}
+
+.main-nav.center ul {
+text-align: center;
+}
+
+ .vivsibleNone{
+  display: block ;
+}
+
+/* LIP */
+ .fixed {
+        position:fixed;
+        top:0px; left:0;
+        width:100%;
+        padding: 10px 0 0 !important;
+        z-index: 100;
+        height:  auto;
+        text-align: center;
+
+        -moz-box-shadow: 5px 5px 20px #333;
+        -webkit-box-shadow: 5px 5px 20px #333;
+        box-shadow: 5px 5px 20px #333;
+    }
+    .transbg {
+        background-color: rgba(120, 120, 120, 0.9) !important;
+    }
+/* LIP */
+
+@media screen and (max-width: 800px) {
+
+.current_page_item {
+color: #cbcac8;
+background-color: gray;
+border-bottom: none;
+}
+.preheader {
+
+  display: none;
+}
+#site-header img {
+  width: 150px;
+}
+.inheader {
+  background: gray none repeat scroll 0 0;
+}
+
+#site-header {
+  float: none !important;
+  height: auto !important;
+  margin: 0 auto;
+  width: 150px !important;
+}
+
+.vivsibleNone{
+  display: block  !important ;
+}
+ .nav-menu{
+   display: none ;
+ }
+
+.main-nav {
+  margin: 0;
+  float: none;
+position: relative;
+min-height: 40px;
+}
+.main-nav ul {
+background: rgb(41, 41, 41) none no-repeat scroll 10px 11px;
+display: none;
+width: 100% !important;
+}
+.main-nav ul li {
+display: block; /* hide all <li> items */
+padding:0!important;
+margin:0 !important;
+}
+.main-nav ul li{
+    border-top: 1px dotted #fff;
+}
+
+.specialForLayerSlaider {
+  margin: -25px auto !important;
+}
+.current {
+ padding: 8px 0 12px;
+display: block !important;
+text-align: center;
+width: 100%;
+background: #45484a;
+font-weight: 900;
+cursor: pointer;color: #FFFFFF;
+}
+.main-nav a {
+display: block;
+font-size: 16px;
+margin: 0;
+padding: 10px 0px  !important;
+text-align: center;
+}
+.main-nav a:hover{
+// padding: 5px 5px 5px 42px;
+color: #fff;
+border: none;
+width: 100%;
+background-color: gray;
+}
+
+.main-nav .current a {
+background: none;
+color: #666;
+}
+.main-nav li ul a{
+/*  display: block;
+ // margin-left: 10px;
+ border: none;
+ width: 100%;*/
+padding-left: 50px;
+}
+
+.main-nav li:hover ul{
+  position: relative;
+  display: block;
+  margin: 0  ;
+  background: none !important;
+}
+
+
+/* При наведении указателя мыши на меню
+.main-nav ul:hover {
+background-image: none;
+}
+.main-nav ul:hover li {
+   margin: 0px;
+ padding: 0px;
+display: block;
+//margin: 0 0 5px;
+
+}
+/*.sub-menu  {
+  display: none;
+}
+
+.main-nav ul li:hover .sub-menu {
+display: block !important;
+margin: 0px ;
+padding: 0px;
+position: static;
+//width: 70%;
+    background: #A8A8A8;
+    transition:  1000ms ease 1111ms;
+}
+.main-nav ul li ul li {
+ margin-left: 10px;
+ padding: 0px;
+
+} */
+/*.main-nav ul li:hover .main-nav li{
+  display: block;
+}
+
+.main-nav ul:hover .current {
+background: url(images/icon-check.png) no-repeat 10px 7px;
+} */
+
+/* Меню справа */
+/*.main-nav.right ul {
+left: auto;
+right: 0;
+}
+/* Меню в центре //*/
+/*.main-nav{
+left: 50%;
+margin-left: -125px;*/
+}
+}
+
+
+
+/* *************************************
+ * --------------Menu------------------*
+ **************************************/
+
+
+/* *************************************
+ * ------------Header------------------*
+ **************************************/
+   body{
+  background: #fefcec url(../img/textura/textura_fon_300_w.png);
+  margin: 0;
+  padding: 0;
+    height: 100%;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 20px;
+}
+html{
+    margin: -17px 0 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+ header {
+  min-height: 139px;
+   background:  url(../img/textura/gradient_header.png) repeat-x ;
+   position: relative;
+    z-index: 10;
+}
+/* ===================== */
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+	margin: 0.4em 1.6em 1.6em 0;
+}
+
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+	margin: 0.4em 0 1.6em 1.6em;
+}
+
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+	clear: both;
+	margin-top: 0.4em;
+	margin-bottom: 1.6em;
+}
+
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.aligncenter {
+	margin-bottom: 1.2em;
+}
+/* =================== */
+.inheader {
+
+margin: 0 auto;
+max-width: 1200px;
+min-width: 250px;
+position: relative;
+z-index: 10;
+}
+.preheader{
+background: #fefcec;
+font-size: 17px;
+height: 55px;
+}
+#site-header {
+  height: auto;
+  width: 284px;
+  float: left;
+}
+.phoneNumber li {
+  color: #a32431;
+  float: left;
+  list-style: outside none none;
+  margin: 0 18px 0 0;
+}
+.menuDontUp {
+    float: right;
+    text-transform: uppercase;
+}
+.big-menu li {
+  float: left;
+  list-style: outside none none;
+}
+.big-menu a {
+
+  color: #888888;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item-12,.menu-item-11{
+border-left: 1px solid #888888;
+border-right: 1px solid #888888;
+margin-left: -1px;
+}
+
+.inPreheader {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: 250px;
+}
+
+.prostoParalaxOne{
+background:  url("../img/aa.jpg") repeat fixed center center;
+min-height: 400px;
+}
+.paralaxForImageBlock{
+background:  url("../img/textura/textura_fon_bordo.png") repeat fixed center center;
+min-height: 400px;
+margin-top: -20px;
+}
+.specialForLayerSlaider {
+margin: -139px auto;
+min-height: 650px;
+}
+
+.wrapper {
+
+}
+section {
+  margin: 0 auto;
+  min-height: 400px;
+  min-width: 250px;
+}
+.leftSidebar {
+  float: left;
+  max-width: 350px;
+  min-width: 250px;
+  min-height: 200px;
+  padding-left: 10px;
+}
+.inSection {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 500px;
+  min-width: 250px;
+  padding: 30px;
+  padding-bottom: 60px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.7);
+
+
+}
+.sectionInleftsidebar,.inRigthSideBar {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 250px;
+}
+.inSectionLeftSidebar {
+margin-left: 350px;
+min-height: 500px;
+padding-bottom: 70px;
+text-align: justify;
+padding-right: 15px;
+}
+
+.forInOneParalax {
+  margin-top: -20px;
+  background: #a32431  url("../img/22.jpg") repeat fixed center center;
+}
+
+
+.hotelreteringrestoran > p {
+  display: none;
+}
+
+
+/* rightSidebar */
+.rightSidebar {
+float: right;
+max-width: 350px;
+min-height: 200px;
+min-width: 250px;
+padding-left: 10px;
+}
+
+.inSectionRightSidebar {
+  margin-right: 350px;
+  min-height: 500px;
+  padding-bottom: 70px;
+  padding-right: 15px;
+  text-align: justify;
+}
+/* rightSidebar */
+
+@media screen and (min-width: 800px) and (max-width: 1043px){
+
+.big-menu a {
+  padding: 0 17px;
+}
+
+.phoneNumber li {
+  margin: 0 3px -20px 0;
+}
+
+.phoneNumber li {
+  float: none;
+}
+
+}
+@media screen and (min-width: 800px) and (max-width: 1110px){
+.menuDontUp {
+  margin-top: -54px;
+}
+
+
+}
+@media screen and (max-width: 886px)  {
+
+
+}
+
+
+
+@media screen and (max-width: 751px)  {
+.sixImages {
+height: 911px ;
+}
+}
+@media screen and (max-width: 599px)  {
+.sixImages {
+height: 1900px ;
+}
+.imageToblock {
+  float: none !important;
+  margin: 15px auto !important;
+}
+}
+@media screen and (min-width: 886px) and (max-width: 1034px){
+
+}
+
+
+/* *************************************
+ * ------------Header------------------*
+ **************************************/
+
+
+
+
+/* *************************************
+ * -----------Content------------------*
+ **************************************/
+  .hotelreteringrestoran {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 250px;
+  padding: 60px;
+  min-height: 900px;
+}
+.olStyleForROKK {
+  display: block;
+  font-size: 1.5em;
+  margin: 0px auto;
+  max-width: 980px;
+  min-height: 330px;
+  min-width: 250px;
+  width: 100%;
+  padding: 10px;
+}
+
+.olStyleForROKK img {
+display: block;
+float: left;
+height: 300px;
+margin:15px  20px 15px 0;
+width: auto;
+}
+.olStyleForROKK > br {
+  display: none;
+}
+
+.olStyleForROKK > h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 40px;
+}
+.olStyleForROKK ul li a {
+color: #fff;
+line-height: 26px;
+text-align: left;
+text-decoration: none;
+}
+.olStyleForROKK ul li a:hover{
+  text-decoration: underline;
+}
+.olStyleForROKK > ul {
+  list-style: none;
+  text-align: left;
+}
+
+.olStyleForROKK img:hover {
+  opacity: 0.7;
+  transition: ease-in 100ms;
+
+}
+
+.restaraunt {
+  background: rgba(109, 54, 15, 0.9) none repeat scroll 0px 0px;
+
+}
+.ketering {
+    background: rgba(72, 90, 27, 0.9) none repeat scroll 0px 0px;
+}
+.cook {
+    background: rgba(35, 55, 55, 0.9) none repeat scroll 0px 0px;
+}
+
+.ketering > h2,.cook > h2 {
+  text-align: right !important;
+}
+
+.ketering li, .cook li {
+  text-align: right;
+}
+.hotel {
+    background: rgba(143, 104, 56, 0.9) none repeat scroll 0% 0%;
+}
+
+.rightPositio {
+  float: right !important;
+  margin: 15px 0 15px 20px !important;
+}
+.sixImages {
+  max-width: 900px;
+  min-width: 250px;
+  padding: 57px 0px 30px 0;
+  margin: 0 auto;
+  min-height: 700px;
+}
+
+.olStyleForROKK a h2 {
+  text-decoration: none;
+  color: #fff;
+}
+.olStyleForROKK a {
+    text-decoration: none;
+}
+.olStyleForROKK a:hover{
+  text-decoration: underline #FFFFFF;
+
+}
+.ketering.olStyleForROKK h2,.cook.olStyleForROKK h2 {
+  text-align: right;
+}
+
+.imageToblock  img {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  height: 250px;
+  margin: 0 auto;
+  width: 250px;
+  border-radius: 100%;
+-moz-border-radius: 100%;
+-webkit-border-radius: 100%;
+box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+border: 3px solid #fff;
+}
+
+.imageToblock > h2 {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+    color: #a32431;
+    margin-top: -54px;
+    padding: 15px;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+}
+.imageToblock {
+  display: block;
+  width: 270px;
+  margin: 15px;
+  float: left;
+}
+
+.compact-theme.wp-posts-carousel .wp-posts-carousel-container {
+
+  border: none !important;
+}
+.compact-theme.wp-posts-carousel .wp-posts-carousel-container:hover{
+  border: none !important;
+  background: none !important;
+}
+
+.compact-theme.wp-posts-carousel .wp-posts-carousel-image img {
+  border: 10px solid #fff !important;
+  border-radius: 100%;
+  width: 265px !important;
+}
+.compact-theme.wp-posts-carousel .wp-posts-carousel-image img:hover {
+  border: 5px solid #fff !important;
+  border-radius: 100%;
+  width: 275px !important;
+  transition: ease 50ms;
+}
+
+.wp-posts-carousel-title > a {
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+  color: #a32431;
+  display: block;
+  margin-top: -38px;
+  padding: 15px;
+  text-decoration: none;
+}
+.wp-posts-carousel-title > a:hover{
+      background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
+
+}
+
+
+.main-heading h1 {
+  text-align: center;
+}
+
+ h3 {
+  text-align: center;
+}
+.comment-body a {
+  color: #a32431;
+  text-decoration: none;
+}
+
+.comment-body a:hover{
+  text-decoration: underline;
+}
+
+.comment-author {
+  height: 50px;
+}
+.avatar {
+  float: left;
+  margin-right: 20px;
+}
+.fn {
+  font-size: 17px;
+  padding: 7px;
+}
+
+.comment-body {
+  margin-bottom: 20px;
+}
+
+#respond > form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 250px;
+}
+form a{
+   color: #A32431;
+}
+
+#commentform input {
+  float: right;
+  margin-right: 30px;
+}
+.children {
+  list-style: outside none none;
+}
+.commentlist li {
+  border: 1px solid #fff;
+  list-style: outside none none;
+  margin: 10px;
+  padding: 10px;
+}
+.comment-body > p {
+  border-top: 1px solid #a32431;
+  border-bottom: 1px solid #a32431;
+}
+
+.reply a{
+  background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  float: right;
+}
+.reply {
+  height: 27px;
+}
+.inCont {
+  min-height: 500px;
+}
+.creatingBy > a {
+  color: gray;
+  text-decoration: none;
+}
+.creatingBy > a:hover
+{
+  text-decoration: underline;
+}
+
+#respond a {
+  color: #a32431;
+  text-decoration: none;
+}
+
+#respond a:hover{
+  text-decoration: underline;
+}
+
+.ContetPOst {
+  max-width: 1200px;
+  min-width: 250px;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 28px;
+  text-align: justify;
+/*  background-color: rgba(255, 255, 255, 0.8);    */
+
+}
+.inKuhar{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+}
+
+.OurContacts {
+  float: right;
+  min-width: 250px;
+  padding-left: 0;
+  width: 100%;
+}
+.inOurContakts {
+  margin-left: 40px;
+  width: 290px;
+  margin: 0 auto;
+  color: #a32431;
+}
+.commentlist {
+  background: rgba(255,255,255,0.7);
+}
+.adress {
+background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+margin-bottom: 20px;
+min-height: 250px;
+padding: 0;
+}
+.widthFivespercent{
+    max-width: 50%;
+}
+.inOurContakts li {
+  list-style: none;
+}
+.panorama {
+  line-height: 0;
+  margin: 0;
+}
+
+.groupVk > img {
+  height: 50px;
+  float: left;
+}
+.groupVk {
+background: #fff none repeat scroll 0 0;
+border: 1px solid #395e88;
+color: #395e88;
+display: block;
+font-weight: bold;
+height: 50px;
+margin: 0 auto;
+width: 230px;
+}
+.inOurContakts > a {
+  text-decoration: none;
+}
+.groupVk > p {
+font-size: 22px;
+padding: 4px 0 0 76px;
+line-height: 0px;
+}
+
+dl {
+  margin: 10px;
+  width: 300px !important;
+}
+.ketering br {
+  display: none;
+}
+
+/* Forma zakaza */
+.hotelBron,.restraunt {
+  background: #8f6838 none repeat scroll 0 0;
+  color: white;
+  font-size: 18px;
+  margin: 0 auto 36px;
+  max-width: 600px;
+  min-height: 120px;
+  min-width: 250px;
+  padding: 30px;
+}
+.restraunt{
+  background: #6d360f;
+  min-height: 150px;
+}
+
+
+.nameHB,.phoneHB,.buttonHB {
+  display: block;
+  float: left;
+  width: 230px;
+  margin: 5px;
+}
+.buttonHB{
+  width: 100px;
+  padding-top: 39px;
+
+}
+
+.hotelBron > p {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-required.wpcf7-validates-as-tel {
+color: #654c00;
+font-size: 18px;
+height: 30px;
+width: 100%;
+}
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+color: #654c00;
+font-size: 18px;
+height: 30px;
+width: 100%;
+}
+.wpcf7-form-control.wpcf7-submit {
+border: medium none;
+height: 35px;
+width: 100%;
+}
+.buttonHB.restHB {
+  padding-top: 47px;
+}
+@media screen and (max-width: 670px) {
+ .nameHB,.phoneHB,.buttonHB {
+  display: block;
+  float: none;
+  width: 100%;
+  margin: 5px;
+}
+.buttonHB.restHB {
+  padding-top: 1px;
+}
+
+.buttonHB {
+  padding-top: 10px;
+  width: 100%;
+}
+}
+
+/* Forma zakaza */
+@media screen and (max-width: 800px)  {
+.olStyleForROKK {
+float: none;
+font-size: 1.2em;
+margin: 0px auto;
+min-width: 250px;
+width: 100%;
+}
+
+.olStyleForROKK a h2{
+  text-align: center !important;
+}
+
+.olStyleForROKK img {
+  display: block;
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.olStyleForROKK > h2 {
+  text-align: center;
+}
+.olStyleForROKK > ul {
+  list-style: outside none none;
+  text-align: left ;
+}
+.ketering > h2, .cook > h2 {
+  text-align: center !important;
+}
+.ketering li, .cook li {
+  text-align: left;
+}
+
+.leftSidebar,.rightSidebar {
+  float: none;
+  max-width: 350px;
+  min-height: 200px;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.inSectionLeftSidebar,.inSectionRightSidebar {
+  margin: 20px;
+}
+
+.widthFivespercent {
+ max-width: 100%;
+}
+
+}
+.nomer_wrapper{
+	width: 30%;
+	min-width: 400px;
+	height: 500px;
+	margin-left: 1.25%;
+	margin-right: 1.25%;
+	margin-top: 10px;
+	float:left;
+}
+/*.nomer{
+	width: 368px;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.3);
+}*/
+.nomer {
+ // border: 1px solid black;
+  float: left;
+  margin: 0 7px 28px 22px;
+  width: 368px;
+}
+.nom_bg{
+	height: 250px;
+	margin: 9px;
+	width: 350px;
+	border: 1px solid black;
+	border-radius: 125px;
+	background-color: rgba(255,255,255,0.3);
+}
+.nom_price{
+	text-align: center;
+	font-family: castellar;
+}
+.nom_name{
+    color: gold;
+    font-family: Georgia;
+    font-size: 36px;
+    text-align: center;
+    height: 40px;
+    margin-top: 16px;
+}
+.nom_opt{
+	background: url(http://iconspot.ru/files/186411.png);
+	/*background-position: auto;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+.nom_opt > p{
+	margin-left: 30px;
+	margin-top: 5px;
+	font-family: georgia;
+	font-size: 16px;
+	color: #535353;
+}
+.opts {
+	margin: 2px;
+	background-color: pink;
+	border: 2px solid white;
+}
+.hotelNomer {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 250px;
+}
+
+
+
+/* Sergey */
+.nomer > img {
+  width: 100%;
+  height: auto;
+}
+
+.opisNomera {
+  text-align: center;
+  color:#ae8748;
+}
+
+.opisNomera h1 {
+    color: #a32431;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.opisNomera h1 b {
+    border: 1px solid #fff;
+    text-transform: none;
+    padding: 4px;
+    font-size: 25px;
+}
+
+.opisNomera h2,.opisNomera h4{
+      margin: 0;
+    padding: 0;
+}
+
+.inNomer {
+  background: rgba(163, 36, 49, 0.9) none repeat scroll 0 0;
+  border: 2px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  width: 330px;
+  margin: 0 auto;
+}
+.inNomer li {
+  list-style: inside none circle;
+  margin: 0 auto;
+  width: 200px;
+}
+.imgToFooter {
+  width: 100%;
+}
+.imgN {
+  height: auto;
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 250px;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 800px)   and (max-width: 1200px) {
+.hotelNomer {
+  max-width: 800px;
+}
+
+}
+
+@media screen and (max-width: 800px){
+  .nomer {
+  margin: 0 auto 28px ;
+float: none;
+}
+}
+
+/* Sergey */
+
+ /* *************************************
+ * -----------Content------------------*
+ **************************************/
+
+
+
+ /* *************************************
+ * -------------Footer------------------*
+ **************************************/
+ footer {
+  background: #a32431 ;
+  bottom: 0;
+  color: #ffffff;
+  left: 0;
+  position: inherit;
+  width: 100%;
+  margin-top: -16px;
+  border-top: 1px solid #fff;
+}
+.clearfix{
+  clear: both;
+}
+
+.creatingBy {
+  text-align: center;
+   padding: 16px;
+}
+
+.imgToFooter > p {
+  text-align: center;
+}
+
+ /* *************************************
+ * -------------Footer------------------*
+ **************************************/

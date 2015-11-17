@@ -1,10 +1,14 @@
 <?php
 
- function min_paralax($attr,$content= null){
+ function minparalax($attr,$content= null){
     extract(shortcode_atts(array(
      "img1" => '',
      "img2" => '',
-     "img3" => ''
+     "img3" => '',
+     "speed1" =>'2',
+     "speed2" =>'1',
+     "speed3" =>'0.5'
+
      ), $attr));
 return
 '
@@ -12,29 +16,22 @@ return
 .min_paralax{
  height: 100%;
  width: 100%;
-
- 
-
- //background:  url('.$img1.') no-repeat fixed center center   ;
-
  }
  .contentbox{
 	 padding: 50px 0 50px 0;
  }
-
 .pbg1{background:  url('.$img1.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
 .pbg2{background:  url('.$img2.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
 .pbg3{background:  url('.$img3.')center 0 repeat-y; margin: 0 auto; position: relative; height: 100%; }
 </style>
-
 <div class="min_paralax" id="min_paralax">
-<section class="pbg1" data-type="background" data-speed="1.5">
-<section class="pbg2" data-type="background" data-speed="0.5">
-<section class="pbg3" data-type="background" data-speed="0.1">
+<section class="pbg1" data-type="background" data-speed='.$speed1.'>
+<section class="pbg2" data-type="background" data-speed='.$speed2.'>
+<section class="pbg3" data-type="background" data-speed='.$speed3.'>
 <div class="contentbox">
  '.$content.'  </div></section></section></section></div>';
 }
-add_shortcode('paralax', 'min_paralax');
+add_shortcode('paralax', 'minparalax');
 
 /*кнопки текстового редактора*/
 function enable_more_buttons($buttons) {
@@ -80,7 +77,7 @@ function _add_my_quicktags()
 { ?>
 <script type="text/javascript">
 
-QTags.addButton( 'Paralax', 'Paralax', '[paralax img1="" img2="" img3=""]', '[/paralax]' );
+QTags.addButton( 'Paralax', 'Paralax', '[paralax img1="" img2="" img3="" speed1="" speed="2" speed="3"]', '[/paralax]' );
 
 
 </script>
